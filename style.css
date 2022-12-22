@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(232, 225, 225);
+}
+.container{
+    position: relative;
+    width: 400px;
+    padding: 20px;
+    border-radius: 20px;
+   box-shadow: 15px 15px 20px rgba(223, 201, 201, 0.1), -15px -15px 20px rgb(199, 192, 192); 
+}
+.container .btn{
+    position: relative;
+    display: grid;
+}
+.container .btn #value{
+    position: relative;
+    grid-column: span 4;
+    user-select: none;
+    overflow: none;
+    width: 100%;
+    text-align: end;
+    color: rgb(56, 56, 78);
+    height: 100px;
+    line-height: 100px;
+    box-shadow: inset 5px 5px 10px rgba(0,0,0,0.1), inset -5px -5px 28px #fff;
+    border-radius: 20px;
+    margin-bottom: 12px;
+    padding: 0 20px;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.container .btn button{
+    position: relative;
+    padding: 10px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.1), -5px -5px 20px #fff ;
+    margin: 10px;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    min-width: 40px;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: rgb(10, 10, 10);
+    border: 2px solid #edf1f4;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.1), -5px -5px 10px #fff ;
+    border-radius: 20px;
+
+}
+.container .btn button:active{
+    box-shadow:inset 5px 5px 10px rgba(0,0,0,0.1), inset -5px -5px 10px #fff; 
+    color: #f03326;
+}
+.container .btn button#clear{
+    grid-column: span 2;
+    background: #f44336;
+    color: #fff;
+    border: 2px solid #edf1f4;
+}
+.container .btn button#plus{
+    grid-row: span 2;
+    background: #4b5c54;
+    color: #fff;
+    border: 2px solid #edf1f4;
+}
+.container .btn button#equal{
+    grid-row: span 2;
+    background: #707773;
+    color: #fff;
+    border: 2px solid #edf1f4;
+}
+.container .btn button#clear,
+.container .btn button#plus,
+.container .btn button#equal{
+ box-shadow: 5px 5px 5px rgba(0,0,0,0.1), -5px -5px 10px #fff,
+ inset 5px 5px 10px rgba(0,0,0,0.1);
+} 
